@@ -1,0 +1,43 @@
+{
+  "org": "your-org",
+  "default_repo": "your-org/your-repo",
+  "ai_model": "claude-opus-4.6",
+  "boards": {
+    "main": {
+      "number": 1,
+      "name": "Main Project",
+      "repo": "your-org/your-repo",
+      "project_id": "PVT_xxx",
+      "fields": {
+        "status": {
+          "id": "PVTSSF_status_xxx",
+          "options": {
+            "todo": "opt_todo",
+            "in progress": "opt_in_progress",
+            "review": "opt_review",
+            "done": "opt_done"
+          }
+        },
+        "priority": {
+          "id": "PVTSSF_priority_xxx",
+          "options": {
+            "p0": "opt_p0",
+            "p1": "opt_p1",
+            "p2": "opt_p2"
+          }
+        },
+        "size": {
+          "id": "PVTSSF_size_xxx",
+          "options": {
+            "s": "opt_s",
+            "m": "opt_m",
+            "l": "opt_l"
+          }
+        },
+        "iteration": {
+          "id": "PVTIF_iteration_xxx"
+        }
+      }
+    }
+  }
+}

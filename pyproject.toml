@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "issue-manager-cli"
+version = "0.1.0"
+description = "Interactive GitHub issue manager with project field support and kanban UI"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Contributors" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+web = [
+  "fastapi>=0.110",
+  "uvicorn>=0.30"
+]
+dev = [
+  "pytest>=7.0",
+  "ruff>=0.1.0"
+]
+
+[project.scripts]
+issue = "issue.cli:main"
+
+[tool.setuptools]
+packages = ["issue"]
